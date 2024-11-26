@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recuperatorio segundo parcial</title>
+    <link rel="stylesheet" href="estilos.css"> 
+
+</head>
+<body>
+
+    <form id="formLista" class="formLista">
+        <h2>Formulario Lista</h2>
+        <table id="tablaPersonas">
+        </table>
+        
+        <br>
+        
+        <button type="button" id="agregar" style="display: inline;">Agregar elemento</button> 
+    </form>
+
+    <div id="formularioABM">
+        <h2 id="encabezadoFormularioABM">Formulario ABM</h2>
+            <form>
+                <label for="id">Id:</label>
+                <input type="text" id="id" name="id" disabled><br><br>
+
+                <label id="labelAtributo1" for="atributo1">Atributo 1</label>
+                <input type="text" id="atributo1" name="atributo1"><br><br>
+
+                <label id="labelAtributo2" for="atributo2">Atributo 2</label>
+                <input type="text" id="atributo2" name="atributo2"><br><br>
+
+                <label for="tipo">Tipo:</label>
+                <select id="tipoPersona" name="tipoABM" onchange="CambiarAtributos()">
+                    <option value="ciudadano">Ciudadano</option>
+                    <option value="extranjero">Extranjero</option>
+                </select><br><br>
+                
+                <label id="labelAtributo3" for="atributo3">Atributo 3</label>
+                <input type="date" id="atributo3" name="atributo3"><br><br>
+
+                <label id="labelAtributo4" for="atributo4">Atributo 4</label>
+                <input type="text" id="atributo4" name="atributo4"><br><br>
+
+                <button type="button" id="agregarAbm" onclick="CrearPersona()">Agregar</button>
+                <button type="button" id="modificarAbm" onclick="ModificarPersona()">Modificar</button>
+                <button type="button" id="eliminarAbm" onclick="EliminarPersona()">Eliminar</button>
+                <button type="button" id="cancelar">Cancelar</button>
+            </form>        
+    </div>
+    <form class="spinner-container" id="spinner">
+        <div class="spinner"></div>
+    </form>
+    
+    <script src="personas.js"></script>
+
+</body>
+</html>

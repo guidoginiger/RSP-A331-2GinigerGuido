@@ -1,0 +1,85 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200;
+    background-color: skyblue;
+    border: 1px solid lightblue;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+table, th, td {
+    border: 2px solid lightskyblue;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+#formularioABM {
+    display: none;
+}        
+@keyframes spin 
+{ 
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg)}; 
+}
+
+.spinner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+
+.spinner {
+    border: 6px solid white;
+    border-top: 6px solid darkblue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+body { 
+    display: flex; 
+    justify-content: 
+    center; align-items: 
+    center; height: 100vh;
+    margin: 0;
+}
+
+#formularioABM { 
+    border: 2px solid lightgray; 
+    padding: 10px; 
+    box-shadow: 0 0 10px darkgray; 
+    background-color: lightcyan; 
+}
+
+input[type="button"] {
+    background-color: lightskyblue;
+    color: black;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    background-color: darkcyan;
+}
